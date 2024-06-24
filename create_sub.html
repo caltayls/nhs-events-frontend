@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHS Free Events</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Subscribe to emails</h1>
+    <h3 id="email"></h3>
+    
+    <form method="post" id="userPreferencesForm">
+      <div id="email">
+        <h2>Email Address</h2>
+        <input type="text" name="email">
+
+      </div>
+      <div id="freqInfo">
+        <h2>Email Frequency</h2>
+        <select id="emailFrequency" name="emailFrequency">
+          <option value="hourly">Hourly</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+        </select>
+
+      <div id="overviewInfo">
+        <h2>Weekly Overview</h2>
+        <h3>Receive an email every Sunday showing next week's upcoming events</h3>
+        <label for="weeklyOverview">Receive Weekly Overview Email</label>
+        <input type="checkbox" id="weeklyOverview" name="weeklyOverview" value="true">
+      </div>
+      <div id="locationInfo">
+        <h2>Locations</h2>
+        <h3>Event locations that you're interested in</h3>
+        <div id="locationCheckboxes"></div>
+      </div>
+      <div id="submit-button-div">
+        <input id="submit-button" type="submit"/>
+      </div>
+    </form>
+      
+  <script src="./create_user_api.js"></script>
+  <script src="./load_counties.js"></script>
+</body>
+</html>

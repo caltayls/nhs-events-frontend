@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0 10%;
+}
+#response {
+  margin-top: 20px;
+}
+
+
+#locationCheckboxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Adjust the gap between items if needed */
+}
+
+#locationCheckboxes div {
+  display: flex;
+  align-items:center;
+  justify-content: end;
+  /* border: 1px solid red; */
+  text-align: right;
+}
+
+#locationCheckboxes label {
+  margin-right: 5px; /* Adjust the space between label and checkbox if needed */
+}
+
+#submit-button-div {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+#submit-button {
+  width: 90px;
+  height: 45px;
+  font-size: large;
+}
+
+label[for="All"] {
+  font-weight: bold; /* Example style */
+}
